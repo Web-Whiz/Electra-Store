@@ -2,6 +2,15 @@
 
 Electra Store is a web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application provides a user-friendly online shopping experience, allowing users to browse products, add them to the cart, make purchases, and manage their orders. It supports three user roles: Admin, Manager/Salesman, and User.
 
+
+## Access All Branches
+
+- Branch Name: [Main](electra-store-client.vercel.app)
+- Branch Name: [Development](https://electra-store-client-git-development-techninjas.vercel.app/)
+- Branch Name : [Hamim](https://electra-store-client-git-hamim-techninjas.vercel.app/)
+
+
+
 ## Features
 
 - User Role:
