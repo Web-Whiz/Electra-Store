@@ -101,7 +101,6 @@ const Footer = () => {
             <ul className="list-none flex items-center space-x-3">
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
-              <li>Terms of Service2</li>
               <li>Prohibited Items</li>
               <li>Prohibited Conduct</li>
               <li>Communication Policy</li>
