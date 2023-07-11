@@ -14,8 +14,8 @@ import img5 from "../../assets/Footer-img/image-5.png";
 const Footer = () => {
   return (
     <footer className="bg-[#F4F4F4]">
-      <div className="max-w-screen-2xl mx-auto py">
-        <div className="grid pt-20 pb-10 lg:grid-cols-4 place-items-end gap-8 items-start">
+      <div className="lg:max-w-screen-2xl px-8 mx-auto py">
+        <div className="grid pt-20 pb-10 lg:grid-cols-4 lg:place-items-end gap-8 items-start">
           <div className="">
             <h2 className="uppercase text-xl font-semibold mb-6">Contact us</h2>
             <div className="space-y-4">
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex justify-between items-center py-5">
+        <div className="flex flex-wrap gap-4 justify-start md:justify-between items-center py-5">
           <div>
             <img src={img7} alt="" />
           </div>
@@ -91,14 +91,14 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex py-4 justify-between items-center">
+        <div className="flex flex-wrap-reverse py-4 md:justify-between gap-4 items-center">
           <div>
-            <p className="text-slate-400">
+            <p className="text-slate-400 text-center">
               &copy; 2022 Electra store. All Rights Reserved
             </p>
           </div>
           <div>
-            <ul className="list-none flex items-center space-x-3">
+            <ul className="list-none flex flex-col md:flex-row md:space-x-3">
               <li>Privacy Policy</li>
               <li>Terms of Service</li>
               <li>Prohibited Items</li>
