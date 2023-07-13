@@ -53,8 +53,8 @@ const BurgerMenu = () => {
   ];
   return (
     <div
-      className={`w-full overflow-y-scroll navbar-scrollbar px-3 py-5 h-screen bg-slate-800`}>
-      <h2 className="text-slate-100 text-4xl flex justify-end lg:hidden">
+      className={`w-full overflow-y-scroll navbar-scrollbar px-3 py-5 h-screen bg-[#F4F4F4]`}>
+      <h2 className="text-slate-800 text-4xl flex justify-end lg:hidden">
         <Hamburger toggled={isOpen} toggle={() => setIsOpen(false)} />
       </h2>
       <div className="mt-16 flex justify-center">
@@ -67,7 +67,7 @@ const BurgerMenu = () => {
           return (
             <div
               key={index}
-              className="py-2 px-2 text-lg text-slate-300 font-medium uppercase cursor-pointer hover:text-magenta transition-all duration-300">
+              className="py-2 px-2 text-lg text-slate-700 font-medium uppercase cursor-pointer hover:text-magenta transition-all duration-300">
               <button className="cursor-pointer hover:text-magenta flex items-center gap-2">
                 <span>{item.icon}</span>
                 <span>{item.name}</span>
