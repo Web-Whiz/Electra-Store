@@ -14,8 +14,8 @@ import img5 from "../../assets/Footer-img/image-5.png";
 const Footer = () => {
   return (
     <footer className="bg-[#F4F4F4]">
-      <div className="lg:max-w-screen-2xl px-8 mx-auto py">
-        <div className="grid pt-20 pb-10 lg:grid-cols-4 lg:place-items-end gap-8 items-start">
+      <div className="lg:max-w-screen-2xl px-8 2xl:px-0 mx-auto py">
+        <div className="grid pt-20 pb-10 lg:grid-cols-4  lg:justify-items-end items-start gap-8">
           <div className="">
             <h2 className="uppercase text-xl font-semibold mb-6">Contact us</h2>
             <div className="space-y-4">
@@ -85,7 +85,7 @@ const Footer = () => {
           <div>
             <img src={img7} alt="" />
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center md:flex-nowrap flex-wrap gap-4">
             <img src={img5} alt="" />
             <img src={img6} alt="" />
           </div>
