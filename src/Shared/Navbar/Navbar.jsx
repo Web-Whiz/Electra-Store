@@ -3,7 +3,12 @@ import { FaRegHeart, FaSearch } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 // import { LiaAngleDownSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import BurgerMenu from "../../Components/BurgerMenu";
+import Hamburger from "hamburger-react";
+import useStateContext from "../../Hooks/useStateContext";
 const Navbar = () => {
+  const { isOpen, setIsOpen } = useStateContext();
+  console.log(isOpen);
   return (
     <div className="bg-[#F4F4F4] py-6 border-b-2">
       <div className="lg:max-w-screen-2xl px-8 2xl:px-0 mx-auto flex items-center justify-between">
@@ -12,7 +17,7 @@ const Navbar = () => {
             <img className="h-16 w-fit" src={logo} alt="" />
           </Link>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <div className="relative flex w-full flex-wrap items-stretch">
             <input
               type="search"
@@ -26,7 +31,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <div className="space-x-8">
+        <div className="space-x-8 hidden lg:block">
           <button className="text-xl">
             <FaRegHeart />
           </button>
@@ -37,6 +42,19 @@ const Navbar = () => {
             {" "}
             Login
           </button>
+        </div>
+
+        {/* mobile navigation bar */}
+        <div className="block lg:hidden">
+          <Hamburger toggled={isOpen} toggle={setIsOpen} />
+          <div
+            className={`fixed top-0 left-0 z-50 w-[65%] md:w-[35%] lg:w-[15%] ${
+              isOpen
+                ? "translate-x-0 origin-right duration-500"
+                : "-translate-x-[101%] lg:translate-x-0 origin-right duration-500"
+            }`}>
+            <BurgerMenu />
+          </div>
         </div>
       </div>
     </div>
