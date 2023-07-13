@@ -1,9 +1,9 @@
-import AppDownloadSection from "../Pages/Home/AppDownloadSection";
+// import AppDownloadSection from "../Pages/Home/AppDownloadSection";
 
 const Home = () => {
   return (
     <div>
-      <AppDownloadSection/>
+      {/* <AppDownloadSection/> */}
     </div>
   );
 };
