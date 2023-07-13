@@ -11,6 +11,7 @@ import './style.css'
 
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
+import Features from "../../Components/Features";
 // import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 const Banner = () => {
   return (
@@ -69,6 +70,7 @@ const Banner = () => {
           </div>
         </SwiperSlide>
       </Swiper>
+      <Features/>
     </>
   );
 };
