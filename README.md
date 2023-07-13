@@ -5,7 +5,7 @@ Electra Store is a web application built using the MERN stack (MongoDB, Express.
 
 ## Access All Branches
 
-- Branch Name: [Main](https://electra-store-client.vercel.app)
+- Branch Name: [Main](https://electra-store-client.vercel.app/)
 - Branch Name: [Development](https://electra-store-client-git-development-techninjas.vercel.app/)
 - Branch Name : [Hamim](https://electra-store-client-git-hamim-techninjas.vercel.app/)
 
