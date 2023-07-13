@@ -25,6 +25,7 @@ const Features = () => {
   return (
     <div className="bg-[#F4F4F4]">
       <div className="max-w-screen-2xl py-14 mx-auto px-8 2xl:px-0 grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-center">
+        <h2>Hello Hamim</h2>
         {features.map((feature) => {
           return (
             <div key={feature.title} className="text-center space-y-4">
