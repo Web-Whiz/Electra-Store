@@ -17,7 +17,7 @@ const Navbar = () => {
             <img className="h-16 w-fit" src={logo} alt="" />
           </Link>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <div className="relative flex w-full flex-wrap items-stretch">
             <input
               type="search"
