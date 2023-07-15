@@ -6,11 +6,11 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <div className="mt-[500px]">
-        <AppDownloadSection />
-      </div>
       <div>
         <Catalogue></Catalogue>
+      </div>
+      <div className="mt-[500px]">
+        <AppDownloadSection />
       </div>
     </div>
   );
