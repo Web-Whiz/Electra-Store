@@ -36,10 +36,10 @@ const Header = () => {
     },
   ];
   return (
-    <div className="bg-white">
+    <div className="bg-[#F8FAFC]">
       <ul className="max-w-screen-2xl py-3 mx-auto list-none flex items-center justify-between">
         <li className="cursor-pointer text-xl">
-          <AiOutlineMenu/>
+          <AiOutlineMenu />
         </li>
         {categories.map((category) => {
           return (

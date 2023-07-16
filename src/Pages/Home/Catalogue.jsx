@@ -9,9 +9,7 @@ const Catalogue = () => {
           Great stuff. New and used. 350,000+ items added every day.
         </p>
       </div>
-      <div className="max-w-screen-2xl mx-auto">
-        
-      </div>
+      <div className="lg:max-w-screen-2xl px-8 2xl:px-0 mx-auto"></div>
     </>
   );
 };
