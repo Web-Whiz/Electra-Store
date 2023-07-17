@@ -10,7 +10,7 @@ import Hamburger from "hamburger-react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import useStateContext from "../Hooks/useStateContext";
+import useStateContext from "../Hooks/useAuth";
 const BurgerMenu = () => {
   const { isOpen, setIsOpen } = useStateContext();
   const navItem = [
