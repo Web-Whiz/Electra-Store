@@ -5,10 +5,10 @@ import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import BurgerMenu from "../../Components/BurgerMenu";
 import Hamburger from "hamburger-react";
-import useStateContext from "../../Hooks/useStateContext";
 import Header from "./Header";
+import useAuth from "../../Hooks/useAuth";
 const Navbar = () => {
-  const { isOpen, setIsOpen } = useStateContext();
+  const { isOpen, setIsOpen } = useAuth();
   console.log(isOpen);
   return (
     <>

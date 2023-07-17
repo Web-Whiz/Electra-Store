@@ -3,12 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import router from "./Router/Router.jsx";
-import Context from "./Providers/Context";
+import AuthProviders from "./Providers/AuthProviders";
+import { ReactNotifications } from "react-notifications-component";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Context>
+    <AuthProviders>
+      <ReactNotifications />
       <RouterProvider router={router}></RouterProvider>
-    </Context>
+    </AuthProviders>
   </React.StrictMode>
 );
