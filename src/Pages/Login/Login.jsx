@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { HiEyeSlash, HiEye } from "react-icons/hi2";
 import useAuth from "../../Hooks/useAuth";
+import "react-notifications-component/dist/theme.css";
+import { Store } from "react-notifications-component";
 
 const Login = () => {
   const { login } = useAuth();
@@ -18,6 +20,20 @@ const Login = () => {
     login(data.email, data.password)
       .then((result) => {
         console.log(result.user);
+        Store.addNotification({
+          message: "Login successful",
+          type: "success",
+          insert: "top",
+          isMobile: true,
+          showIcon: true,
+          container: "top-center",
+          animationIn: ["animate__animated", "animate__bounceIn"],
+          animationOut: ["animate__animated", "animate__zoomOut"],
+          dismiss: {
+            duration: 3000,
+            onScreen: true,
+          },
+        });
       })
       .catch((error) => {
         console.log(error);

@@ -27,8 +27,8 @@ const Register = () => {
           isMobile: true,
           showIcon: true,
           container: "top-center",
-          animationIn: ["animate__animated", "flash"],
-          animationOut: ["animate__animated", "animate__fadeOut"],
+          animationIn: ["animate__animated", "animate__bounceIn"],
+          animationOut: ["animate__animated", "animate__zoomOut"],
           dismiss: {
             duration: 3000,
             onScreen: true,
