@@ -4,6 +4,7 @@ import { HiEyeSlash, HiEye } from "react-icons/hi2";
 import useAuth from "../../Hooks/useAuth";
 import "react-notifications-component/dist/theme.css";
 import { Store } from "react-notifications-component";
+import { sendEmailVerification } from "firebase/auth";
 
 const Register = () => {
   const { createUser, updateUserProfile } = useAuth();
@@ -20,19 +21,22 @@ const Register = () => {
       .then((result) => {
         console.log(result.user);
         updateUserProfile(data.name).then(() => {});
-        Store.addNotification({
-          message: "Registration successful",
-          type: "success",
-          insert: "top",
-          isMobile: true,
-          showIcon: true,
-          container: "top-center",
-          animationIn: ["animate__animated", "animate__bounceIn"],
-          animationOut: ["animate__animated", "animate__zoomOut"],
-          dismiss: {
-            duration: 3000,
-            onScreen: true,
-          },
+        sendEmailVerification(result.user).then(() => {
+          Store.addNotification({
+            title: "Registration successful",
+            message: "Email verification sent!",
+            type: "success",
+            insert: "top",
+            isMobile: true,
+            showIcon: true,
+            container: "top-center",
+            animationIn: ["animate__animated", "animate__bounceIn"],
+            animationOut: ["animate__animated", "animate__zoomOut"],
+            dismiss: {
+              duration: 5000,
+              onScreen: true,
+            },
+          });
         });
       })
       .catch((error) => {
