@@ -1,0 +1,103 @@
+[
+      {
+        "id": 1,
+        "title": "Classic Hoodies",
+        "image": "https://i.ibb.co/ry39fRx/image.png",
+        "price": 29.99,
+        "shipping_cost": 0,
+        "category": "cloths",
+        "popular": true,
+        "location": "Sylhet"
+      },
+      {
+        "id": 2,
+        "title": "Wireless Headset",
+        "image": "https://i.ibb.co/kQk9ZSW/image.png",
+        "price": 39.99,
+        "shipping_cost": 3.99,
+        "category": "electronics",
+        "popular": true,
+        "location": "Comilla"
+      },
+      {
+        "id": 3,
+        "title": "Beauty Kits",
+        "image": "https://i.ibb.co/bQ51hkc/image.png",
+        "price": 9.99,
+        "shipping_cost": 0,
+        "category": "women",
+        "popular": true,
+        "location": "Chittagoanj"
+      },
+      {
+        "id": 4,
+        "title": "Ryzen Processor",
+        "image": "https://i.ibb.co/9bD0FjY/image.png",
+        "price": 29.99,
+        "shipping_cost": 0,
+        "category": "electronics",
+        "popular": true,
+        "location": "Dhaka"
+      },
+      {
+        "id": 5,
+        "title": "Over Time",
+        "image": "https://i.ibb.co/zFkprGC/image.png",
+        "price": 39.99,
+        "shipping_cost": 3.99,
+        "category": "medicine",
+        "popular": true,
+        "location": "Canada"
+      },
+      {
+        "id": 6,
+        "title": "Apple Watch 4",
+        "image": "https://i.ibb.co/0G6GSvR/image.png",
+        "price": 9.99,
+        "shipping_cost": 0,
+        "category": "electronics",
+        "popular": true,
+        "location": "Delhi"
+      },
+      {
+        "id": 7,
+        "title": "Beauty Kits",
+        "image": "https://i.ibb.co/bQ51hkc/image.png",
+        "price": 9.99,
+        "shipping_cost": 0,
+        "category": "women",
+        "popular": true,
+        "location": "Dhaka"
+      },
+      {
+        "id": 8,
+        "title": "Classic Hoodies",
+        "image": "https://i.ibb.co/ry39fRx/image.png",
+        "price": 29.99,
+        "shipping_cost": 0,
+        "category": "cloths",
+        "popular": true,
+        "location": "Kathmandu"
+      },
+      {
+        "id": 9,
+        "title": "Wireless Headset",
+        "image": "https://i.ibb.co/kQk9ZSW/image.png",
+        "price": 39.99,
+        "shipping_cost": 3.99,
+        "category": "electronics",
+        "popular": true,
+        "location": "China"
+      },
+      {
+        "id": 10,
+        "title": "Beauty Kits",
+        "image": "https://i.ibb.co/bQ51hkc/image.png",
+        "price": 9.99,
+        "shipping_cost": 0,
+        "category": "women",
+        "popular": true,
+        "location": "Dhaka"
+      }
+    ]
+  

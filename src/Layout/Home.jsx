@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import ProductCard from "../Components/ProductCard/ProductCard";
 import AppDownloadSection from "../Pages/Home/AppDownloadSection";
 import Banner from "../Pages/Home/Banner";
@@ -5,6 +6,17 @@ import Header from "../Shared/Navbar/Header";
 import Catalogue from "./../Pages/Home/Catalogue";
 
 const Home = () => {
+
+  const [products, setProducts] = useState([""]);
+
+  useEffect(()=>{
+
+    fetch('/products.json')
+    .then(res => res.json())
+    .then(data => setProducts(data))
+
+  },[])
+
   return (
     <div>
       <Header />
@@ -20,16 +32,9 @@ const Home = () => {
           </button>
         </div>
         <div className="my-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-5 gap-6">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {
+            products.map((product, i) => <ProductCard key={i} product={product} />)
+          }
         </div>
       </div>
       <div className="mt-[500px]">
