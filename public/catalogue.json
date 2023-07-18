@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "Women Fashion",
+      "image": "https://i.ibb.co/9TQ81kf/women.png"
+    },
+    {
+      "id": 2,
+      "title": "Men Fashion",
+      "image": "https://i.ibb.co/0KjX4R4/men.png"
+    },
+    {
+      "id": 3,
+      "title": "Books",
+      "image": "https://i.ibb.co/PGHCH3s/books.png"
+    },
+    {
+      "id": 4,
+      "title": "Home & Living",
+      "image": "https://i.ibb.co/PYKv0z6/home.png"
+    },
+    {
+      "id": 5,
+      "title": "Sports & Outdoor",
+      "image": "https://i.ibb.co/tXcwnZq/play.png"
+    },
+    {
+      "id": 6,
+      "title": "Beauty & Cosmetics",
+      "image": "https://i.ibb.co/S0cnfWD/brasuty.png"
+    },
+    {
+      "id": 7,
+      "title": "Electronics",
+      "image": "https://i.ibb.co/XzPwgmy/electonocs.png"
+    },
+    {
+      "id": 8,
+      "title": "Toys & Games",
+      "image": "https://i.ibb.co/tXcwnZq/play.png"
+    },
+    {
+      "id": 9,
+      "title": "Books",
+      "image": "https://i.ibb.co/PGHCH3s/books.png"
+    },
+    {
+      "id": 10,
+      "title": "Home & Living",
+      "image": "https://i.ibb.co/tXcwnZq/play.png"
+    }
+  ]
