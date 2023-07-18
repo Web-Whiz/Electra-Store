@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut,
   updateProfile,
@@ -13,6 +14,7 @@ export const AuthContext = createContext();
 const auth = getAuth(app);
 const AuthProviders = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [loginPage, setLoginPage] = useState("login");
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const createUser = (email, password) => {
@@ -26,6 +28,11 @@ const AuthProviders = ({ children }) => {
   const updateUserProfile = (name) => {
     return updateProfile(auth.currentUser, {
       displayName: name,
+    });
+  };
+  const passwordResetMail = (email) => {
+    return sendPasswordResetEmail(auth, email, {
+      url: `${import.meta.env.VITE_URL}/login`,
     });
   };
   const logOut = () => {
@@ -45,10 +52,13 @@ const AuthProviders = ({ children }) => {
     isOpen,
     loading,
     user,
+    loginPage,
+    setLoginPage,
     setIsOpen,
     createUser,
     login,
     updateUserProfile,
+    passwordResetMail,
     logOut,
   };
   return <AuthContext.Provider value={info}>{children}</AuthContext.Provider>;
