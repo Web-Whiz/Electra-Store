@@ -6,7 +6,7 @@ import { Store } from "react-notifications-component";
 import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
-  const  login  = useAuth();
+  const  {login}  = useAuth();
   const {
     register,
     handleSubmit,
@@ -19,7 +19,6 @@ const Login = () => {
   const onSubmit = (data) => {
     login(data.email, data.password)
       .then((result) => {
-        console.log(result.user);
         Store.addNotification({
           message: "Login successful",
           type: "success",
@@ -34,9 +33,9 @@ const Login = () => {
             onScreen: true,
           },
         });
+        
       })
       .catch((error) => {
-        console.log(error);
         setErrorMessage(error.message);
       });
   };
