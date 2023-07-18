@@ -4,6 +4,7 @@ import {
 import Main from "../Layouts/Main";
 import Home from "../Pages/Home/Home";
 import SignIn from "../Pages/LogIn&SignUp/SignIn";
+import LogIn from "../Layouts/LogIn";
 
 
 
@@ -15,13 +16,19 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <Home /> 
-        },
-      {
-        path: "/login",
-        element: <SignIn/>
-      },
+        }
       ]
     },
+    {
+      path: '/login',
+      element: <LogIn />,
+      children: [
+        {
+          path: '/login',
+          element: <SignIn />
+        }
+      ]
+    }
   ]);
 
 
