@@ -6,7 +6,7 @@ import { Store } from "react-notifications-component";
 import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
-  const  login  = useAuth();
+  const { login } = useAuth();
   const {
     register,
     handleSubmit,
