@@ -8,8 +8,16 @@ import Hamburger from "hamburger-react";
 import Header from "./Header";
 import useAuth from "../../Hooks/useAuth";
 const Navbar = () => {
-  const { isOpen, setIsOpen } = useAuth();
-  console.log(isOpen);
+  const { isOpen, setIsOpen, user, logOut } = useAuth();
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        console.log("logout successful");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <>
       <div className="bg-[#F4F4F4] py-6 border-b-2">
@@ -42,12 +50,21 @@ const Navbar = () => {
             <button className="text-xl">
               <FiShoppingCart />
             </button>
-            <Link to="/login">
-              <button className="px-6 py-3 bg-[#ED6620] text-white rounded-md">
+            {!user ? (
+              <Link to="/login">
+                <button className="px-6 py-3 bg-[#ED6620] text-white rounded-md">
+                  {" "}
+                  Login
+                </button>
+              </Link>
+            ) : (
+              <button
+                onClick={handleLogOut}
+                className="px-6 py-3 bg-[#ED6620] text-white rounded-md">
                 {" "}
-                Login
+                Logout
               </button>
-            </Link>
+            )}
           </div>
 
           {/* mobile navigation bar */}
