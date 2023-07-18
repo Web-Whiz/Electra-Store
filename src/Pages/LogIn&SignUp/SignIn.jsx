@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/Navbar/logo.png";
 import Register from "./Register";
-import Login from "./LogIn";
+import Login from "./Login";
 const SignIn = () => {
   const [login, setLogin] = useState("login");
   return (
