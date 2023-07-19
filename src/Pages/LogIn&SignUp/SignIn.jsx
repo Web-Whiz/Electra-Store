@@ -3,7 +3,7 @@ import logo from "../../assets/Navbar/logo.png";
 import Register from "./Register";
 import Login from "./Login";
 import useAuth from "../../Hooks/useAuth";
-import ForgotPassword from "./forgotPassword";
+import ForgotPassword from './ForgotPassword'
 const SignIn = () => {
   const { loginPage, setLoginPage } = useAuth();
   return (
@@ -52,7 +52,7 @@ const SignIn = () => {
                 </div>
               </>
             ) : (
-              <ForgotPassword />
+              <ForgotPassword/>
             )}
           </div>
         </div>
