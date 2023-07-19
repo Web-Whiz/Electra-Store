@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "shop_image": "https://example.com/shop1.jpg",
+    "shop_name": "Shop 1",
+    "rating": 4.5,
+    "review": "Great products and services!Outstanding service, top-notch quality, and a truly delightful experience. Highly recommended for all your needs!",
+    "user_image": "https://example.com/user1.jpg",
+    "user_name": "John Doe",
+    "review_date": "2023-07-18"
+  },
+  {
+    "id": 2,
+    "shop_image": "https://example.com/shop2.jpg",
+    "shop_name": "Shop 2",
+    "rating": 3.8,
+    "review": "Good selection but slow delivery.Outstanding service, top-notch quality, and a truly delightful experience. Highly recommended for all your needs!",
+    "user_image": "https://example.com/user2.jpg",
+    "user_name": "Jane Smith",
+    "review_date": "2023-07-17"
+  },
+  {
+    "id": 3,
+    "shop_image": "https://example.com/shop3.jpg",
+    "shop_name": "Shop 3",
+    "rating": 4.2,
+    "review": "Excellent customer service!Outstanding service, top-notch quality, and a truly delightful experience. Highly recommended for all your needs!",
+    "user_image": "https://example.com/user3.jpg",
+    "user_name": "Michael Johnson",
+    "review_date": "2023-07-16"
+  },
+  {
+    "id": 4,
+    "shop_image": "https://example.com/shop4.jpg",
+    "shop_name": "Shop 4",
+    "rating": 3.5,
+    "review": "Average experience.Outstanding service, top-notch quality, and a truly delightful experience. Highly recommended for all your needs!",
+    "user_image": "https://example.com/user4.jpg",
+    "user_name": "Sarah Lee",
+    "review_date": "2023-07-15"
+  },
+  {
+    "id": 5,
+    "shop_image": "https://example.com/shop5.jpg",
+    "shop_name": "Shop 5",
+    "rating": 4.8,
+    "review": "Highly recommended!Outstanding service, top-notch quality, and a truly delightful experience. Highly recommended for all your needs!",
+    "user_image": "https://example.com/user5.jpg",
+    "user_name": "David Wang",
+    "review_date": "2023-07-14"
+  },
+  {
+    "id": 6,
+    "shop_image": "https://example.com/shop6.jpg",
+    "shop_name": "Shop 6",
+    "rating": 3.9,
+    "review": "Could improve their product range.Outstanding service, top-notch quality, and a truly delightful experience. Highly recommended for all your needs!",
+    "user_image": "https://example.com/user6.jpg",
+    "user_name": "Emily Johnson",
+    "review_date": "2023-07-13"
+  }
+]
