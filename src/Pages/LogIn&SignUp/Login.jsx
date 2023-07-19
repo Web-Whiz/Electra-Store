@@ -6,7 +6,7 @@ import { Store } from "react-notifications-component";
 import useAuth from "../../Hooks/useAuth";
 
 const Login = () => {
-  const { login } = useAuth();
+  const { login, setLoginPage } = useAuth();
   const {
     register,
     handleSubmit,
@@ -93,9 +93,11 @@ const Login = () => {
           </p>
         )}
         <div className="mt-1">
-          <a href="#" className="hover:underline">
+          <button
+            onClick={() => setLoginPage("forgotPassword")}
+            className="hover:underline">
             Forgot password?
-          </a>
+          </button>
         </div>
       </div>
       <p className="mt-4 text-red-500">{errorMessage}</p>

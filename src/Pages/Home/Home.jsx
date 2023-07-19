@@ -3,6 +3,8 @@ import Banner from "../../Components/HomePage/Banner";
 import Features from "../../Components/HomePage/Features";
 import Recommended from "../../Components/HomePage/Recommended";
 import Catalogue from "../../Components/Catalogue/Catalogue";
+import Reviews from "../../Components/HomePage/Reviews";
+import MoneyBackGuarantee from "../../Components/HomePage/MoneyBackGurantee";
 
 const Home = () => {
   return (
@@ -25,6 +27,12 @@ const Home = () => {
       {/* Recommended For You Section */}
       <div>
         <Recommended />
+      </div>
+      <div>
+        <MoneyBackGuarantee/>
+      </div>
+      <div>
+        <Reviews/>
       </div>
     </div>
   );
