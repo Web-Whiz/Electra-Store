@@ -36,5 +36,18 @@
     "postcss": "^8.4.26",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.0"
-  }
+  },
+  "description": "Electra Store is a web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application provides a user-friendly online shopping experience, allowing users to browse products, add them to the cart, make purchases, and manage their orders. It supports three user roles: Admin, Manager/Salesman, and User.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-Whiz/Electra-Store-Client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Web-Whiz/Electra-Store-Client/issues"
+  },
+  "homepage": "https://github.com/Web-Whiz/Electra-Store-Client#readme"
 }
