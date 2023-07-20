@@ -13,7 +13,7 @@ const Recommended = () => {
   return (
     <div className="md:mx-44 md:my-12 px-2 md:px-0 border-y-2 py-12">
       <div className="flex items-baseline gap-16">
-        <h1 className="text-4xl font-semibold">Recommended for you</h1>
+        <h1 className="text-4xl font-semibold">Recommended</h1>
         <button className="text-blue-500 text-lg font-semibold hover:underline">
           See All
         </button>

@@ -114,11 +114,17 @@ const Register = () => {
           </p>
         )}
         <div className="mt-2 space-x-2">
-          <input type="checkbox" className="" id="condition" />
-          <label htmlFor="condition">
-            I agree the{" "}
-            <span className="hover:text-[#ED6620] cursor-pointer font-medium">
-              Terms & conditions
+          <label className="cursor-pointer label">
+            <input
+              type="checkbox"
+              defaultChecked="checked"
+              className="checkbox checkbox-warning"
+            />
+            <span className="label-text">
+              I agree the{" "}
+              <span className="hover:text-[#ED6620] cursor-pointer font-medium">
+                Terms & conditions
+              </span>
             </span>
           </label>
         </div>

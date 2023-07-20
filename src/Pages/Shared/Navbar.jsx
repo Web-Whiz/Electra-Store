@@ -1,5 +1,5 @@
 import logo from "../../assets/Navbar/logo.png";
-import { FaRegHeart, FaSearch } from "react-icons/fa";
+import { FaRegHeart, FaSearch, FaUserAlt } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import BurgerMenu from "../../Components/BurgerMenu/BurgerMenu";
@@ -41,7 +41,7 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="space-x-8 hidden lg:block">
+          <div className="space-x-8 hidden lg:flex items-center">
             <button className="text-xl">
               <FaRegHeart />
             </button>
@@ -56,12 +56,33 @@ const Navbar = () => {
                 </button>
               </Link>
             ) : (
-              <button
-                onClick={handleLogOut}
-                className="px-6 py-3 bg-[#ED6620] text-white rounded-md">
-                {" "}
-                Logout
-              </button>
+              <div className="dropdown dropdown-end z-20">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  {user.photoURL ? (
+                    <div className="w-10 rounded-full ring-2 ring-offset-2 ring-orange-500">
+                      <img src={user.photoURL && user.photoURL} />
+                    </div>
+                  ) : (
+                    <FaUserAlt className="text-4xl p-2 rounded-full ring-2 ring-offset-2 ring-orange-500" />
+                  )}
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>
+                    <a className="justify-between">
+                      Profile
+                      <span className="badge">New</span>
+                    </a>
+                  </li>
+                  <li>
+                    <Link to="dashboard">Dashboard</Link>
+                  </li>
+                  <li onClick={handleLogOut}>
+                    <a>Logout</a>
+                  </li>
+                </ul>
+              </div>
             )}
           </div>
 
