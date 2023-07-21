@@ -4,9 +4,13 @@ import { HiEyeSlash, HiEye } from "react-icons/hi2";
 import "react-notifications-component/dist/theme.css";
 import { Store } from "react-notifications-component";
 import useAuth from "../../Hooks/useAuth";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const  {login}  = useAuth();
+  const { login, setLoginPage } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
   const {
     register,
     handleSubmit,
@@ -33,7 +37,7 @@ const Login = () => {
             onScreen: true,
           },
         });
-        
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         setErrorMessage(error.message);
@@ -92,9 +96,11 @@ const Login = () => {
           </p>
         )}
         <div className="mt-1">
-          <a href="#" className="hover:underline">
+          <p
+            onClick={() => setLoginPage("forgotPassword")}
+            className="hover:underline">
             Forgot password?
-          </a>
+          </p>
         </div>
       </div>
       <p className="mt-4 text-red-500">{errorMessage}</p>

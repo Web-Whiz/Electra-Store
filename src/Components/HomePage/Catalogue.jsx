@@ -6,12 +6,15 @@ import "./catalogueStyle.css";
 
 const Catalogue = () => {
     const [catalogues, setCatalogues] = useState([""]);
+    
 
-    useEffect(() => {
+    useEffect(()=> {
+
         fetch("/catalogue.json")
-            .then((res) => res.json())
-            .then((data) => setCatalogues(data));
-    }, []);
+        .then(res => res.json())
+        .then(data => setCatalogues(data))
+
+    }, [])
 
     const [sliderRef] = useKeenSlider({
         loop: true, mode: "free", slides: {

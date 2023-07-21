@@ -1,8 +1,9 @@
-import React from "react";
 import Banner from "../../Components/HomePage/Banner";
 import Features from "../../Components/HomePage/Features";
 import Recommended from "../../Components/HomePage/Recommended";
-import Catalogue from "../../Components/HomePage/Catalogue.jsx";
+import Catalogue from "../../Components/HomePage/Catalogue";
+import Reviews from "../../Components/HomePage/Reviews";
+import MoneyBackGuarantee from "../../Components/HomePage/MoneyBackGurantee";
 
 const Home = () => {
     return (
@@ -22,12 +23,18 @@ const Home = () => {
                 <Catalogue />
             </div>
 
-            {/* Recommended For You Section */}
-            <div>
-                <Recommended />
-            </div>
-        </div>
-    );
+      {/* Recommended For You Section */}
+      <div>
+        <Recommended />
+      </div>
+      <div>
+        <MoneyBackGuarantee/>
+      </div>
+      <div>
+        <Reviews/>
+      </div>
+    </div>
+  );
 };
 
 export default Home;
