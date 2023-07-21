@@ -1,16 +1,18 @@
 import {
   BsFillPersonFill,
-  BsCart4,
-  BsClipboardData,
-  BsList,
+  BsBox,
+  BsPlusSquare,
+  BsReceipt,
+  BsListCheck,
   BsHeart,
   BsCreditCard,
-  BsPencilSquare,
+  BsStar,
 } from "react-icons/bs";
-import { FaClipboardCheck, FaSignOutAlt, FaUserCircle } from "react-icons/fa";
+
+import { FaSignOutAlt, FaUserCircle } from "react-icons/fa";
 import useAuth from "../../Hooks/useAuth";
 import { NavLink } from "react-router-dom";
-const UserMenu = () => {
+const SellerMenu = () => {
   const navItem = [
     {
       name: "My Account",
@@ -18,24 +20,24 @@ const UserMenu = () => {
       icon: <BsFillPersonFill />,
     },
     {
-      name: "Cart",
+      name: "Manage Products",
       path: "cart",
-      icon: <BsCart4 />,
+      icon: <BsBox />,
     },
     {
-      name: "My Orders",
+      name: "Add products",
       path: "/myorders",
-      icon: <FaClipboardCheck />,
+      icon: <BsPlusSquare />,
     },
     {
-      name: "Order History",
+      name: "Manage orders",
       path: "/orderhistory",
-      icon: <BsClipboardData />,
+      icon: <BsReceipt />,
     },
     {
-      name: "My Lists",
+      name: "All orders",
       path: "/mylists",
-      icon: <BsList />,
+      icon: <BsListCheck />,
     },
     {
       name: "My Wishlist",
@@ -48,9 +50,9 @@ const UserMenu = () => {
       icon: <BsCreditCard />,
     },
     {
-      name: "My Reviews",
+      name: "Reviews",
       path: "/myreviews",
-      icon: <BsPencilSquare />,
+      icon: <BsStar />,
     },
   ];
   const { user } = useAuth();
@@ -91,4 +93,4 @@ const UserMenu = () => {
     </div>
   );
 };
-export default UserMenu;
+export default SellerMenu;

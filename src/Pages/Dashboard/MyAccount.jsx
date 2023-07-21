@@ -11,22 +11,26 @@ const MyAccount = () => {
   };
 
   return (
-    <div className="p-4">
-      <div className="border-b-2 pb-5 flex items-center gap-6 border-white">
-        <h2 className="text-xl font-medium">Personal Information</h2>
+    <div className="">
+      <div className="border-b-2 px-4 py-4 pb-5 bg-orange-500  flex items-center gap-6 border-white">
+        <h2 className="text-xl font-medium text-white">Personal Information</h2>
         <button
           onClick={() => setChange(!change)}
-          className="link-info link-hover">
+          className="link link-hover">
           Change information
         </button>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 p-5">
         <div className="mb-5">
           <label htmlFor="picture" className="text-lg font-normal">
             Profile Picture
           </label>
           <img
-            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" // Provide the URL to your default profile picture
+            src={
+              user?.photoURL
+                ? user?.photoURL
+                : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+            } // Provide the URL to your default profile picture
             alt="Profile Picture"
             className="mt-2 w-20 h-20 block focus:border-[#ED6620] border-slate-400 border-[1px] outline-none rounded-full cursor-pointer"
             onClick={handleClick}
